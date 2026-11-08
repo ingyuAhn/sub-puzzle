@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Subtitle Puzzle 개인정보처리방침</title>
+<style>
+  :root { --text: #1f2328; --muted: #59636e; --bg: #ffffff; --line: #d1d9e0; }
+  @media (prefers-color-scheme: dark) { :root { --text: #e6edf3; --muted: #9198a1; --bg: #0d1117; --line: #3d444d; } }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.7 "Segoe UI", "Malgun Gothic", sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 40px 16px 64px; }
+  h1 { font-size: 28px; margin-bottom: 4px; }
+  h2 { font-size: 20px; margin-top: 36px; padding-bottom: 6px; border-bottom: 1px solid var(--line); }
+  .muted { color: var(--muted); }
+  code { font-size: 14px; }
+  hr { border: 0; border-top: 1px solid var(--line); margin: 48px 0; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Subtitle Puzzle 개인정보처리방침</h1>
+  <p class="muted">시행일: 2026년 11월 8일</p>
+
+  <p>Subtitle Puzzle(이하 "확장프로그램")은 넷플릭스 시청 중 화면에 표시되는 영어 자막을 단어 퍼즐로 바꿔 주는 영어 학습용 브라우저 확장프로그램입니다. 이 문서는 확장프로그램이 어떤 데이터를 다루는지 설명합니다.</p>
+
+  <h2>1. 수집하는 개인정보</h2>
+  <p>확장프로그램은 이름, 이메일, 계정 정보, 시청 기록, 결제 정보 등 <strong>개인을 식별할 수 있는 정보를 수집하지 않습니다.</strong> 개발자가 운영하는 서버도 없으며, 어떤 데이터도 개발자에게 전송되지 않습니다.</p>
+
+  <h2>2. 처리하는 데이터와 목적</h2>
+  <ul>
+    <li><strong>화면 자막 텍스트</strong>: 넷플릭스 재생 화면에 표시되는 자막 문장을 읽어 단어 퍼즐을 만듭니다. 이 처리는 사용자의 브라우저 안에서만 이루어집니다.</li>
+    <li><strong>번역 요청</strong>: 퍼즐 정답과 함께 한국어 번역을 보여 주기 위해, 해당 자막 문장 한 줄을 번역 서비스로 보냅니다.
+      <ul>
+        <li>브라우저에 내장 번역 기능(Chrome Translator API)이 준비돼 있으면 기기 안에서 번역하며 외부로 전송하지 않습니다.</li>
+        <li>그렇지 않으면 Google 번역(<code>translate.googleapis.com</code>)으로 자막 문장만 전송합니다. 이때 Google의 <a href="https://policies.google.com/privacy">개인정보처리방침</a>이 적용됩니다.</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2>3. 저장하는 데이터</h2>
+  <p>퍼즐 켜기/끄기, 자막 숨김 여부, 퍼즐 창 위치 같은 <strong>설정값만</strong> 사용자의 브라우저(localStorage)에 저장합니다. 이 값은 사용자의 기기에만 남으며, 브라우저 데이터를 삭제하거나 확장프로그램을 제거하면 함께 사라집니다.</p>
+
+  <h2>4. 제3자 제공 및 판매</h2>
+  <p>확장프로그램은 데이터를 판매하거나, 광고·분석 목적으로 제3자에게 제공하지 않습니다. 위 2항의 번역 요청 외에는 어떤 외부 서비스로도 데이터를 보내지 않습니다.</p>
+
+  <h2>5. 넷플릭스와의 관계</h2>
+  <p>이 확장프로그램은 개인이 개발한 학습 도구이며, Netflix, Inc.와 제휴하거나 승인받지 않았습니다. Netflix는 Netflix, Inc.의 상표입니다.</p>
+
+  <h2>6. 방침 변경</h2>
+  <p>이 방침이 바뀌면 이 페이지에 변경 내용과 새 시행일을 게시합니다.</p>
+
+  <h2>7. 문의</h2>
+  <p>개인정보 관련 문의: <strong>dksdlsrb10@gmail.com</strong></p>
+
+  <hr>
+
+  <h1>Subtitle Puzzle Privacy Policy</h1>
+  <p class="muted">Effective date: November 8, 2026</p>
+
+  <h2>Data we collect</h2>
+  <p>Subtitle Puzzle does <strong>not collect any personally identifiable information</strong> (name, email, account, viewing history or payment data). There is no developer-operated server and no data is sent to the developer.</p>
+
+  <h2>Data we process</h2>
+  <ul>
+    <li><strong>On-screen subtitle text</strong> is read in your browser to build the word puzzle. This happens locally.</li>
+    <li><strong>Translation</strong>: to show a Korean translation, the single subtitle sentence is translated by the browser's built-in Translator API when available (on-device), or otherwise sent to Google Translate (<code>translate.googleapis.com</code>), which is governed by <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</li>
+  </ul>
+
+  <h2>Data we store</h2>
+  <p>Only settings (puzzle on/off, subtitle hiding, panel position) are stored in your browser's localStorage on your device.</p>
+
+  <h2>Sharing</h2>
+  <p>We do not sell data or share it with third parties for advertising or analytics. Apart from the translation request above, no data leaves your browser.</p>
+
+  <h2>Affiliation</h2>
+  <p>This is an independent learning tool and is not affiliated with or endorsed by Netflix, Inc. Netflix is a trademark of Netflix, Inc.</p>
+
+  <h2>Contact</h2>
+  <p><strong>dksdlsrb10@gmail.com</strong></p>
+</main>
+</body>
+</html>
